@@ -1,0 +1,10 @@
+/*=========================
+  Content
+  =========================*/
+
+.jd-content {
+  @extend .jd-shadow-m;
+  @extend .jd-border-radius-xs;
+
+  background: $jd-color-bg-primary;
+}

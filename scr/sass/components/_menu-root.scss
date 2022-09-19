@@ -1,0 +1,32 @@
+/*=========================
+  Menu Root
+===========================*/
+
+.jd-menu-root {
+  display: flex;
+  align-items: center;
+}
+.jd-menu-root__item {}
+.jd-menu-root__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  height: $jd-header-height;
+}
+.jd-menu-root__link__text {
+  font-size: .7rem;
+}
+.jd-menu-root__link__icon + .jd-menu-root__link__text {
+  margin-left: .5rem;
+}
+
+// Active
+.jd-menu-root__link.is-active {
+    pointer-events: none;
+    color: $jd-color-text-secondary;
+
+    .jd-menu-root__link__icon {
+      background-color: $jd-color-text-secondary;
+    }
+}

@@ -1,0 +1,44 @@
+/*=========================
+  Block Type
+===========================*/
+
+.jd-block-type {
+  @extend .jd-shadow-m;
+  @extend .jd-border-radius-s;
+
+  border: solid 1px $jd-color-border-primary;
+  background: $jd-color-bg-substrate;
+  cursor: grab;
+}
+
+.jd-block-type__preview {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background: $jd-color-bg-primary;
+}
+
+.jd-block-type__img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.jd-block-type__caption {
+  @extend .jd-text-body;
+
+  text-align: center;
+  padding: .25rem;
+}
+
+/*=========================
+  Block Type List
+===========================*/
+
+.jd-block-type-list {
+  display: grid;
+  row-gap: map-get($jd-spacers, 'm');
+}

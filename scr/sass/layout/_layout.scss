@@ -1,0 +1,30 @@
+/*=========================
+  Layout
+  =========================*/
+
+.jd-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 1280px;
+}
+.jd-layout__header {}
+.jd-layout__main {
+  flex-grow: 1;
+  min-height: 0;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.jd-layout__side {
+  min-width: 16rem;
+  width: 25%;
+}
+.jd-layout__content {
+  width: 600px;
+  height: 50px;
+  margin: map-get($jd-spacers, 'm') 0;
+}
+.jd-layout__footer {
+  margin-top: auto;
+}

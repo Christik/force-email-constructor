@@ -1,0 +1,16 @@
+/*=========================
+  Side
+  =========================*/
+
+.jd-side {
+  background: $jd-color-bg-primary;
+  padding: map-get($jd-spacers, 'm');
+  overflow: auto;
+
+  &--left {
+    border-right: solid 1px $jd-color-border-primary;
+  }
+  &--right {
+    border-left: solid 1px $jd-color-border-primary;
+  }
+}

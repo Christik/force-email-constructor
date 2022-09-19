@@ -1,0 +1,10 @@
+/*=========================
+  Header
+  =========================*/
+
+.jd-header {
+  @extend .jd-shadow-m;
+
+  background: $jd-color-bg-primary-inverse;
+  height: 2.5rem;
+}
