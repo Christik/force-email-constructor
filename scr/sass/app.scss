@@ -7,12 +7,17 @@
 @import './tokens/shadow';
 @import './tokens/border-radius';
 @import './tokens/spacers';
+@import './tokens/border-dashed';
 
 @import './typography/body';
 @import './typography/colors';
 
 @import './modules/icons';
 @import './modules/badges';
+@import './modules/field';
+@import './modules/checkbox';
+@import './modules/switcher';
+@import './modules/button';
 @import './modules/block-type';
 
 @import './layout/container';
@@ -23,7 +28,6 @@
 @import './layout/footer';
 
 @import './components/menu-root';
-@import './components/field';
-@import './components/checkbox';
-@import './components/switcher';
 @import './components/pagination';
+@import './components/tabs';
+@import './components/email-section';

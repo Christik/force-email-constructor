@@ -11,7 +11,7 @@
   @extend .jd-text-body;
   display: block;
   width: 100%;
-  height: $jd-control-height;
+  height: map-get($jd-control-heights, 'm');
   padding: 0 .75rem;
   border: solid 1px $jd-color-border-primary;
   background: $jd-color-bg-primary;
@@ -24,7 +24,7 @@
 .jd-field__icon {
   position: absolute;
   top: 0;
-  width: $jd-control-height;
+  width: map-get($jd-control-heights, 'm');
   height: 100%;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@
 // Icon Left
 .jd-field--has-icon-left {
   .jd-field__input {
-    padding-left: $jd-control-height;
+    padding-left: map-get($jd-control-heights, 'm');
   }
   .jd-field__icon {
     left: 0;

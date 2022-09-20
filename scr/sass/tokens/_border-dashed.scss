@@ -1,0 +1,26 @@
+/*=========================
+  Border Dashed
+===========================*/
+
+.jd-border-dashed {
+  &:before {
+    content: '';
+    display: none;
+    position: absolute;
+    left: .1rem;
+    top: .1rem;
+    right: .1rem;
+    bottom: .1rem;
+    pointer-events: none;
+    border: 2px dashed $jd-color-bg-accent;
+  }
+
+  &--opacity:before {
+    opacity: .35;
+  }
+
+  &--display:before {
+    display: block;
+  }
+}
+

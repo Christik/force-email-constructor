@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  height: $jd-control-height-s;
+  height: map-get($jd-control-heights, 's');
 }
 .jd-pagination__link {
   @extend .jd-border-radius-s;
@@ -25,7 +25,7 @@
 
   font-weight: 500;
   border: solid 1px $jd-color-border-primary;
-  min-width: $jd-control-height-s;
+  min-width: map-get($jd-control-heights, 's');
   padding: 0 .5rem;
 }
 .jd-pagination__divider {}

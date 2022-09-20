@@ -1,0 +1,35 @@
+/*=========================
+  Email Section
+===========================*/
+
+.jd-email-section {
+  @extend .jd-border-dashed;
+
+  position: relative;
+  cursor: pointer;
+
+  &.is-active {
+    @extend .jd-border-dashed--display;
+  }
+
+  &:not(.is-active):hover {
+    @extend .jd-border-dashed--opacity;
+    @extend .jd-border-dashed--display;
+  }
+
+  &:active {
+    cursor: grab;
+  }
+}
+
+.jd-email-section--settings {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  opacity: 0;
+
+  .jd-email-section:hover & {
+    opacity: 1;
+  }
+}
+

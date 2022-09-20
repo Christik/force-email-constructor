@@ -1,0 +1,62 @@
+/*=========================
+  Tabs Navigation
+===========================*/
+
+.jd-tabs-nav {
+  display: flex;
+  width: 100%;
+}
+
+.jd-tabs-nav__item {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.jd-tabs-nav__item__input {
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+}
+.jd-tabs-nav__item__text {
+  @extend .jd-text-body;
+
+  display: block;
+  border-bottom: solid 1px $jd-color-border-primary;
+  color: $jd-color-text-tertiary;
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 .5rem;
+}
+
+/*=========================
+  Tabs Navigation Item Hover
+===========================*/
+
+@media (hover: hover) {
+  .jd-tabs-nav__item__text:hover {
+    color: $jd-color-text-accent;
+    border-bottom-color: $jd-color-bg-accent;
+  }
+}
+
+/*=========================
+  Tabs Navigation Item Checked
+===========================*/
+
+.jd-tabs-nav__item__input:checked + .jd-tabs-nav__item__text {
+  color: $jd-color-text-primary;
+  cursor: default;
+  pointer-events: none;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    background: $jd-color-text-primary;
+    height: 3px;
+  }
+}

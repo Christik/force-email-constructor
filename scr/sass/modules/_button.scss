@@ -1,0 +1,39 @@
+/*=========================
+  Button
+===========================*/
+
+.jd-button {
+  @extend .jd-border-radius-s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: map-get($jd-control-heights, 's');
+  min-width: map-get($jd-control-heights, 's');
+  border: solid 1px $jd-color-border-primary;
+  background: $jd-color-bg-primary;
+}
+
+.jd-button--icon {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (hover: hover) {
+  .jd-button:hover {
+    border-color: $jd-color-bg-accent;
+
+    .jd-button__icon {
+      background-color: $jd-color-bg-accent;
+    }
+  }
+
+  .jd-button--hover-error:hover {
+    border-color: $jd-color-bg-error;
+
+    .jd-button__icon {
+      background-color: $jd-color-bg-error;
+    }
+  }
+}

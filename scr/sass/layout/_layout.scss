@@ -22,7 +22,7 @@
 }
 .jd-layout__content {
   width: 600px;
-  height: 50px;
+  align-self: center;
   margin: map-get($jd-spacers, 'm') 0;
 }
 .jd-layout__footer {
